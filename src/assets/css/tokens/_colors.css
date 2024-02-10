@@ -1,0 +1,10 @@
+:root {
+  --c-neutral-white: #FFF;
+  --c-neutral-black: #000;
+  --c-neutral-grey: #212121;
+
+  --c-background: #FFDB04;
+
+  --c-foreground: var(--c-neutral-black);
+  --c-foreground-light: var(--c-neutral-grey);
+}

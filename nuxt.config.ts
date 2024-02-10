@@ -2,4 +2,9 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   srcDir: 'src/',
+  css: [
+    '~/assets/css/tokens/_colors.css',
+    '~/assets/css/tokens/_typography.css',
+    '~/assets/css/_globals.css',
+  ],
 })

@@ -1,0 +1,87 @@
+/* Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding for a clean slate */
+* {
+  margin: 0;
+  padding: 0;
+
+  /* Prevent grid and flex items from spilling out of their containers */
+  min-width: 0;
+}
+
+/* Base font settings */
+html {
+  font-size: var(--font-size-root) !important;
+}
+
+body {
+  /* Font settings */
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-base);
+  line-height: var(--font-line-height-base);
+  letter-spacing: var(--font-spacing-md);
+
+  /* Color settings */
+  background-color: var(--c-background);
+  color: var(--c-foreground);
+  -webkit-tap-highlight-color: transparent;
+
+  /* Prevent arbitrary zooming on mobile devices */
+  touch-action: pan-x pan-y;
+
+  /* Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Full viewport height layout */
+html, body, #__nuxt {
+  height: 100vh;
+  overflow: hidden;
+  min-height: -webkit-fill-available;
+}
+
+/* Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Normalize form elements */
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0; /* Fix for Firefox and Safari */
+  outline: 0;
+  border: 0;
+  overflow: visible; /* Fix for IE */
+  text-transform: none; /* Fix for Edge, Firefox, and IE */
+}
+
+/* Correct styling for clickable types in iOS and Safari */
+button, [type="button"], [type="reset"], [type="submit"] {
+  appearance: button;
+  -webkit-appearance: button;
+}
+
+/* Avoid text overflows*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Custom selection colors */
+::-moz-selection {
+  color: var(--c-neutral-white);
+  background-color: var(--c-foreground);
+}
+
+::selection {
+  color: var(--c-neutral-white);
+  background-color: var(--c-foreground-light);
+}
