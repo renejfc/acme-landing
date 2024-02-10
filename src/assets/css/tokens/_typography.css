@@ -22,5 +22,6 @@
   --font-spacing-none: 0;
   --font-spacing-xs: -0.05rem;
   --font-spacing-sm: 0.015rem;
-  --font-spacing-md: 0.05rem;
+  --font-spacing-md: 0.025rem;
+  --font-spacing-lg: 0.05rem;
 }
