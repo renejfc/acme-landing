@@ -42,7 +42,6 @@ body {
 /* Full viewport height layout */
 html, body, #__nuxt {
   height: 100vh;
-  overflow: hidden;
   min-height: -webkit-fill-available;
 }
 
@@ -50,6 +49,10 @@ html, body, #__nuxt {
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
+}
+
+svg {
+  min-width: fit-content;
 }
 
 /* Normalize form elements */
@@ -85,8 +88,12 @@ ul {
   list-style: none;
 }
 
-/* Avoid text overflows*/
+/* Avoid text overflows & reset font styles */
 p, h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
   overflow-wrap: break-word;
 }
 
