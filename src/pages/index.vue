@@ -65,16 +65,32 @@
         </p>
       </article>
     </section>
+    <section class="list-section">
+      <ul class="list">
+        <li class="list__item">Communities green space</li>
+        <li class="list__item">Strengthening infrastructure</li>
+        <li class="list__item">Dynamic families thought leader</li>
+      </ul>
+      <p class="list__description">150 CC</p>
+    </section>
+    <section class="images">
+      <div class="images__wrapper">
+        <NuxtImg src="/img/foo.png" class="image"/>
+        <NuxtImg src="/img/foobar.png" class="image"/>
+        <NuxtImg src="/img/bar.png" class="image"/>
+      </div>
+      <Separator class="separator"/>
+    </section>
   </main>
 </template>
 <style scoped lang="css">
 main {
   --max-container-width: 115.6rem;
+  --margin-w: 0 1rem;
 }
 
 .main {
   gap: 14rem;
-  margin: 1rem;
   display: flex;
   align-items: center;
   margin-top: 10.6rem;
@@ -85,6 +101,7 @@ main {
   gap: 2.4rem;
   display: flex;
   flex-direction: column;
+  margin: var(--margin-w);
   max-width: var(--max-container-width);
 }
 
@@ -135,10 +152,59 @@ main {
   margin-left: 10.1rem;
 }
 
+.list-section {
+  width: 100%;
+  display: flex;
+  padding: var(--margin-w);
+  justify-content: space-between;
+  max-width: var(--max-container-width);
+}
+
+.list {
+  gap: 2.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.list__item {
+  font-size: var(--font-size-lg);
+  letter-spacing: var(--font-spacing-md);
+  line-height: var(--font-line-height-md);
+  font-weight: var(--font-weight-semibold);
+}
+
+.images {
+  gap: 5.5rem;
+  width: 100%;
+  display: flex;
+  height: 56.1rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+.images__wrapper {
+  gap: 0.8rem;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.image {
+  height: 100%;
+  flex-shrink: 0;
+  object-fit: cover;
+  width: max-content;
+}
+
+.separator {
+  width: var(--max-container-width);
+}
+
 @media (max-width: 768px) {
   .hero__description {
     font-size: var(--font-size-xl);
-    line-height: var(--font-line-height-xl);
+    line-height: var(--font-line-height-md);
   }
 
   .cards {
