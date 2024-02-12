@@ -42,6 +42,7 @@ body {
 /* Full viewport height layout */
 html, body, #__nuxt {
   height: 100vh;
+  overflow-x: hidden;
   min-height: -webkit-fill-available;
 }
 

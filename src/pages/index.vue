@@ -204,7 +204,7 @@ main {
 @media (max-width: 768px) {
   .hero__description {
     font-size: var(--font-size-xl);
-    line-height: var(--font-line-height-md);
+    line-height: var(--font-line-height-xl);
   }
 
   .cards {
