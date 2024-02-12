@@ -1,75 +1,53 @@
-# Nuxt 3 Minimal Starter
+# 🛠️ Project Setup
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+_**In order to get the app running with the expected behaviour you'll need these:**_
 
-## Setup
+## 🟢 Node 20.11.0 *(LTS)*
+You can use the node binary from the official package or a node package manager (such as [NVM](https://github.com/nvm-sh/nvm), [FNM](https://github.com/Schniz/fnm), [N](https://github.com/tj/n))
 
-Make sure to install the dependencies:
+## 🐱 PNPM
 
-```bash
-# npm
-npm install
+With Node LTS Installed, you can enable corepack...
 
-# pnpm
+```shell
+corepack enable
+```
+
+...then install the dependencies with pnpm
+
+```shell
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+---
+## ⚡ Development Server
 
-Start the development server on `http://localhost:3000`:
+You can start the dev server by using...
 
-```bash
-# npm
-npm run dev
+```shell
+pnpm dev
+```
+---
 
-# pnpm
-pnpm run dev
+## 📈 Build
 
-# yarn
-yarn dev
+You can use this to build into the production version of the app...
 
-# bun
-bun run dev
+```shell
+pnpm build
 ```
 
-## Production
+---
 
-Build the application for production:
+# 🧠 Proccess
 
-```bash
-# npm
-npm run build
+- First I started by defining the styles system, since I had to use plain CSS I created partials for all the tokens related to typography, colors, etc...
 
-# pnpm
-pnpm run build
+- Basically after that it was just a matter of building the landing page and using them.
 
-# yarn
-yarn build
+- I didn't give much use to creating components since I considered it wasn´t really necesary for a landing page.
 
-# bun
-bun run build
-```
+- I just had the design for desktop so I had to improvise a bit for other screens.
 
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- Finally I just had to make some improvements for accesibility, performance and SEO.
+---
