@@ -112,7 +112,7 @@ main {
 }
 
 .hero__description {
-  color: var(--c-neutral-grey);
+  color: var(--c-foreground-light);
   font-size: var(--font-size-2xl);
   letter-spacing: var(--font-spacing-xs);
   line-height: var(--font-line-height-2xl);
@@ -126,8 +126,8 @@ main {
   max-width: var(--max-container-width);
   grid-template-columns: repeat(2, 1fr);
   min-height: var(--max-container-width);
-  background-color: var(--c-neutral-black);
-  border: 0.4rem solid var(--c-neutral-black);
+  background-color: var(--c-foreground);
+  border: 0.4rem solid var(--c-foreground);
 }
 
 .card {

@@ -25,7 +25,7 @@
   align-items: center;
   padding: 3.2rem 2.4rem;
   justify-content: space-between;
-  border-bottom: 0.4rem solid var(--c-neutral-grey);
+  border-bottom: 0.4rem solid var(--c-foreground-light);
 }
 
 .header__title {
@@ -53,5 +53,16 @@
   font-size: var(--font-size-md);
   letter-spacing: var(--font-spacing-sm);
   font-weight: var(--font-weight-semibold);
+}
+
+@media (max-width: 480px) {
+  .header {
+    gap: 3.2rem;
+    flex-direction: column;
+  }
+
+  .header__list {
+    gap: 1.6rem;
+  }
 }
 </style>
