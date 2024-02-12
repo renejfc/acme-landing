@@ -1,7 +1,7 @@
 <script setup lang="ts">
 withDefaults(
   defineProps<{
-    variant: "full" | "bottom-half" | "no-top-left-quarter";
+    variant?: "full" | "bottom-half" | "no-top-left-quarter";
   }>(),
   {
     variant: "full",

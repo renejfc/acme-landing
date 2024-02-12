@@ -83,23 +83,39 @@
       <nav aria-label="Social media" class="footer__nav-social">
         <ul class="footer__nav-list-secondary">
           <li class="footer__nav-item-secondary">
-            <NuxtLink class="footer__nav-link-secondary" to="/">
-              <Social variant="facebook"/>
+            <NuxtLink
+              class="footer__nav-link-secondary"
+              to="/"
+              aria-label="Facebook"
+            >
+              <Social variant="facebook" />
             </NuxtLink>
           </li>
           <li class="footer__nav-item-secondary">
-            <NuxtLink class="footer__nav-link-secondary" to="/">
-              <Social variant="instagram"/>
+            <NuxtLink
+              class="footer__nav-link-secondary"
+              to="/"
+              aria-label="Instagram"
+            >
+              <Social variant="instagram" />
             </NuxtLink>
           </li>
           <li class="footer__nav-item-secondary">
-            <NuxtLink class="footer__nav-link-secondary" to="/">
+            <NuxtLink
+              class="footer__nav-link-secondary"
+              to="/"
+              aria-label="Twitter"
+            >
               <Social variant="twitter" />
             </NuxtLink>
           </li>
           <li class="footer__nav-item-secondary">
-            <NuxtLink class="footer__nav-link-secondary" to="/">
-              <Social variant="linkedin"/>
+            <NuxtLink
+              class="footer__nav-link-secondary"
+              to="/"
+              aria-label="LinkedIn"
+            >
+              <Social variant="linkedin" />
             </NuxtLink>
           </li>
         </ul>

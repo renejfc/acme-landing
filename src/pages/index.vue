@@ -75,11 +75,29 @@
     </section>
     <section class="images">
       <div class="images__wrapper">
-        <NuxtImg src="/img/foo.png" class="image"/>
-        <NuxtImg src="/img/foobar.png" class="image"/>
-        <NuxtImg src="/img/bar.png" class="image"/>
+        <NuxtImg
+          src="/img/foo.png"
+          class="image"
+          format="webp"
+          alt="View of a satelite from space with planet earth on the background"
+          loading="lazy"
+        />
+        <NuxtImg
+          src="/img/foobar.png"
+          class="image"
+          format="webp"
+          alt="Astronaut in the space"
+          loading="lazy"
+        />
+        <NuxtImg
+          src="/img/bar.png"
+          class="image"
+          format="webp"
+          alt="View of space with nebulae"
+          loading="lazy"
+        />
       </div>
-      <Separator class="separator"/>
+      <Separator class="separator" />
     </section>
   </main>
 </template>
